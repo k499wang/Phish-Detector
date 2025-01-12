@@ -8,6 +8,10 @@ url_api = Blueprint('url_api', __name__)
 
 model = joblib.load('logistic_model.pkl')
 
+@url_api.route('/test', methods=['GET'])
+def test():
+    return jsonify({'message': 'Hello, World!'})
+
 @url_api.route('/predict_url', methods=['POST', 'GET'])
 def predict_url():
     
