@@ -59,7 +59,7 @@ const Home = () => {
         <p className="text-center mt-4">Enter a URL below to check if it is a phishing website. This uses a Logistic Regression model to classify websites as malicious or not. 
             Please enter a Valid URL.
         </p>
-        <div className = "bg-white p-4 rounded-lg shadow-lg mt-4">
+        <div className = "container bg-white p-4 rounded-lg shadow-lg mt-4">
             <FloatingLabel
             variant="filled"
             label="Floating Helper"

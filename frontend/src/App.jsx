@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import NavBar from './components/NavBar'
 import Home from './pages/Home'
+import About from './pages/About';
 import { Routes, Route } from "react-router-dom";
 
 
@@ -14,6 +15,7 @@ function App() {
       <div className="flex-grow mt-14">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </div>
