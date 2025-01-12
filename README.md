@@ -4,6 +4,8 @@ This project classifies URLs as either phishing or benign using Logistic Regress
 
 The original notebook can be found here: https://colab.research.google.com/drive/1PEUx_5g7xRI5RkcvffeyYdsYpRFmHMon
 
+The Deployed website can be found here: https://phish-detector-1.onrender.com/
+
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
@@ -34,7 +36,6 @@ The application consists of three main components:
 2. **Backend**: A Flask API that scrapes website features, processes requests, and classifies URLs.
 3. **Model**: A Logistic Regression model trained on features extracted from URLs.
 
-![Architecture Diagram](https://example.com/architecture-diagram-placeholder)
 
 ## Technologies Used
 - **Frontend**: React, HTML, CSS, JavaScript.
