@@ -62,7 +62,7 @@ const Home = () => {
         <div className = "container bg-white p-4 rounded-lg shadow-lg mt-4">
             <FloatingLabel
             variant="filled"
-            label="Floating Helper"
+            label="Enter URL..."
             helperText="Please enter a valid URL."
             onChange= {(e) => handleChange(e)}
             autoComplete="off"
