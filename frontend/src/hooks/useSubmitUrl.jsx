@@ -11,6 +11,8 @@ const useSubmitUrl = () => {
     const checkUrl = async (url) => {
         try {
             setLoading(true);
+
+            url.trim();
             
             const response = await fetch(`${apiUrl}/predict_url`, {
                 method: "POST",
@@ -27,6 +29,7 @@ const useSubmitUrl = () => {
                 setProbability(data.probability);
                 }
             else {
+                console.log(data);
                 setError(true);
             }
 

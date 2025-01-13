@@ -486,13 +486,15 @@ def return_features(url):
     elif re.match(r'^[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$', url):
         url = "https://" + url
     
+    print(url)
+    
     try:
         response = requests.get(url)
-        if response.status_code != 200:
+        if response.status_code >= 400:
             return False
     except:
         return False
-    
+        
     
     
     features = []
@@ -529,4 +531,5 @@ def return_features(url):
     features.append(classify_stats_report(url))
     
     return [features]
-
+    
+    

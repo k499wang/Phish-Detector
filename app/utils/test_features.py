@@ -1,5 +1,5 @@
 import pytest
-from extract_features import has_https, classify_domain, has_nonstd_port, has_favicon
+from extract_features import has_https, classify_domain, has_nonstd_port, has_favicon, check_anchors
 
 def test_classify_domain():
     assert classify_domain("google.com") == -1
@@ -19,4 +19,5 @@ def test_has_favicon():
     
     
 
-
+def test_check_anchors(mock_requests):
+    assert check_anchors("https://www.google.com") == 1
